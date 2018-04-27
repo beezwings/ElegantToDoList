@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- Version 1.5 -->
+      <title>Jessie's To-Do List</title>
+      <!-- jquery-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- jquery ui -->
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <!-- bootstrap css-->
+      <link type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            rel="stylesheet"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!--Jessie's css-->
+      <link rel='stylesheet'
+            type='text/css'
+            href='css/js-final.css'/>
+  </head>
+
+  <body>
+
+    <!-- Javascript Final Project :: To-Do List -->
+
+    <!-- Header -->
+    <header>
+        <h1 class="display-1"> To Do </h1>
+    </header>
+
+    <!-- Section containing to do list, new & complete -->
+      <div class="container">
+        <div class="row">
+          <div class="todo-container col-md-6 col-12 offset-md-3">
+
+              <!-- Newly Added To-Do Items -->
+              <section id="todo-new-items">
+                <h1 class="display-4 display-5 new-item-header">Still left to do </h1>
+
+                <!-- All items are nested in an ul id="sortable" to use jquery ul's sortable plugin -->
+                <ul id="sortable">
+
+                  <!-- First Row Contents -->
+                  <li>
+                    <div class="container-fluid todo-new-container">
+                      <div class="todo-row row">
+                        <div class="checkbox checkbox-new col-1"><input type="checkbox" name="" value="" class="checkbox1"/> </div>
+                        <div class="todo-item new-item col-10">  <input type="text" name="" value="" placeholder="+ add new item" class="todo-input" /></div>
+                        <div class="todo-delete col-1"></div>
+                      </div>
+                    </div>
+                  <li>
+                <!-- End Row Contents -->
+                <!-- Subsequent Rows Dynamically Populated Here-->
+                </ul>
+              </section>
+
+              <!-- To be deleted upon finding a more elegant solution:  -->
+              <button type="button" name="button" class="add-new">Add New</button>
+
+              <!-- Completed items move here -->
+              <section id="todo-completed-items">
+                <h1 class="display-4 display-5">Completed! </h1>
+
+                  <!-- First Row Contents -->
+                  <div class="container-fluid todo-new-container">
+                    <div class="todo-row row">
+                      <div class="checkbox col-1"><input type="checkbox" name="" class="checkbox1" checked="checked"/> </div>
+                      <div class="todo-item complete-item col-10">  <input type="text" name="" value="try unchecking me" placeholder="" class="todo-input" /></div>
+                      <div class="todo-delete col-1"></div>
+                    </div>
+                  </div>
+
+                  <!-- Subsequent Row Contents Goes Here-->
+
+              </section>
+              <button type="button" name="button" class="clear-completed">Clear Completed Items</button>
+            </div>
+          </div>
+        </div>
+
+    <script type="text/javascript" src="js/js-final.js"></script>
+  </body>
+</html>

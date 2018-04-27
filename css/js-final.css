@@ -1,0 +1,153 @@
+/* Jessie's CSS file for JS Final Project
+
+Feb 16, 2018
+Version 1.6
+*/
+
+/* header formatting */
+
+header h1 {
+  text-align: center;
+  width: 100%;
+}
+
+/* To-do List Container */
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.todo-container {
+  box-shadow: 1px 1px 4px 0px grey;
+  margin-top: 3em;
+  padding: 2em;
+}
+
+.todo-row {
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+  flex-wrap: nowrap;
+  font-size: 1.185em;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+
+}
+
+#todo-completed-items .todo-row:hover {
+  background: none;
+}
+
+.todo-row:hover, todo-row:focus {
+  border-bottom: 1px solid #cea0a0;
+  border-top: 1px solid #cea0a0;
+  background: url(../images/move.png) 6px 9px;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+}
+
+.display-5 {
+  font-size: 1.93rem;
+  margin-bottom: .7em;
+}
+
+.checkbox input {
+  width: 100%;
+  margin-top: 7px;
+  height: 20px;
+}
+
+.checkbox {
+  padding: 0px;
+  margin-left: 18px;
+  width: 100%;
+}
+
+/* this sets newly added rows to hidden at first */
+.hidden-row {
+  display: none;
+}
+
+/* Unfinished Items */
+
+#todo-new-items {
+  margin-bottom: .5em;
+}
+
+.todo-item input {
+  width: 95%;
+  border: 0;
+  outline-color: transparent;
+}
+
+.todo-item {
+  padding: 3px 0 0 0;
+  margin-right: -20px;
+}
+
+
+/* Button formatting */
+
+button {
+  color: #fff;
+  cursor: pointer;
+  font-weight: 300;
+  border-radius: 4px;
+  width: auto;
+  padding: 1em 1.175em;
+  letter-spacing: 2px;
+  font-size: .8em;
+  line-height: 1.133;
+  border: 0 solid transparent;
+  text-transform: uppercase;
+  transition: all .3s ease 0s;
+  background: #969696;
+  margin-left: 29px;
+}
+button:hover {
+  background: rgba(239,89,38,.75);
+}
+
+button.add-new {
+  margin-bottom: 2em;
+}
+
+/* Delete Button */
+
+.todo-delete {
+
+  display: none;
+  background: url(../images/trash-circle-red-128.png) 6px 6px;
+  background-size: 27px 27px;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+
+/* clear button */
+
+button.clear-completed {
+  margin-top: 1.8em;
+}
+
+/* Completed Items */
+
+#todo-completed-items .complete-item, #todo-completed-items .complete-item input {
+  color: #b7b7b7;
+  text-decoration: line-through;
+}
+
+#todo-completed-items {
+  margin: 1.8em 0 0 0;
+}
+
+/* wild card */
+
+#star img{
+  height: 150px;
+  width: auto;
+  position: absolute;
+  left: 20%;
+  top: -20%;
+}
